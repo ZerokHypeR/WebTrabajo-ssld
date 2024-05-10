@@ -1,14 +1,37 @@
+{% load static %}
+
 <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolsa de Empleo - Blog</title>
+    <link rel="stylesheet" href="{% static '../../static/styles-Blog.css' %}"><body>
+    <header>
+        <h1>Bolsa de Empleo</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Publicaciones</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<html>
+    <section id="blog">
+        <article class="post">
+            <h2>Título de la Publicación</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pretium volutpat libero, non cursus sapien tincidunt ut.</p>
+            <footer>
+                <span>Fecha de publicación: 10 de mayo de 2024</span>
+            </footer>
+        </article>
 
-    <head>
+        <!-- Aquí puedes agregar más publicaciones -->
+    </section>
 
-        <body>
-                <h1>Bienvenido Al Blog De Tu Proxima Pagina</h1>
-
-            
-        </body>
-
-    </head>
+    <footer>
+        <p>&copy; 2024 Bolsa de Empleo</p>
+    </footer>
+</body>
 </html>

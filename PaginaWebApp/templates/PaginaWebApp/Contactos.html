@@ -1,14 +1,28 @@
+{% load static %}
 <!DOCTYPE html>
-
-<html>
-
-    <head>
-
-        <body>
-
-            <h1>Bienvenido Al Contactos De Tu Proxima Pagina</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <!-- <link rel="stylesheet" href="{% static '../static/style-Contactos.css' %}"> -->
+    <link rel="stylesheet" href="{% static '../static/styles-Contactos.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>Formulario de Contacto</h2>
+        <form action="#" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
             
-        </body>
-
-    </head>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
 </html>
